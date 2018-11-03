@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B02C23A2184B1E000CE28F1 /* FocusDirectrixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B02C2392184B1E000CE28F1 /* FocusDirectrixViewController.swift */; };
+		7B02C23C2189261000CE28F1 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B02C23B2189261000CE28F1 /* Point.swift */; };
+		7B02C23E21892E1000CE28F1 /* DistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B02C23D21892E1000CE28F1 /* DistanceViewController.swift */; };
+		7B1F9EDC216A4456009FE8D7 /* PolarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1F9EDB216A4456009FE8D7 /* PolarViewController.swift */; };
 		7B2DA79F2151C3D900D7C8EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2DA79E2151C3D900D7C8EE /* AppDelegate.swift */; };
 		7B2DA7A12151C3D900D7C8EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2DA7A02151C3D900D7C8EE /* ViewController.swift */; };
 		7B2DA7A42151C3D900D7C8EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B2DA7A22151C3D900D7C8EE /* Main.storyboard */; };
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B02C2392184B1E000CE28F1 /* FocusDirectrixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusDirectrixViewController.swift; sourceTree = "<group>"; };
+		7B02C23B2189261000CE28F1 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		7B02C23D21892E1000CE28F1 /* DistanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceViewController.swift; sourceTree = "<group>"; };
+		7B1F9EDB216A4456009FE8D7 /* PolarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolarViewController.swift; sourceTree = "<group>"; };
 		7B2DA79B2151C3D900D7C8EE /* functionQuadratic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = functionQuadratic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B2DA79E2151C3D900D7C8EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B2DA7A02151C3D900D7C8EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +85,7 @@
 		7B2DA7922151C3D800D7C8EE = {
 			isa = PBXGroup;
 			children = (
+				7B02C2392184B1E000CE28F1 /* FocusDirectrixViewController.swift */,
 				7B2DA79D2151C3D900D7C8EE /* functionQuadratic */,
 				7B2DA7B22151C3DA00D7C8EE /* functionQuadraticTests */,
 				7B2DA7BD2151C3DA00D7C8EE /* functionQuadraticUITests */,
@@ -99,7 +108,10 @@
 			children = (
 				7B2DA79E2151C3D900D7C8EE /* AppDelegate.swift */,
 				7B2DA7A02151C3D900D7C8EE /* ViewController.swift */,
+				7B1F9EDB216A4456009FE8D7 /* PolarViewController.swift */,
 				7B2DA7A22151C3D900D7C8EE /* Main.storyboard */,
+				7B02C23D21892E1000CE28F1 /* DistanceViewController.swift */,
+				7B02C23B2189261000CE28F1 /* Point.swift */,
 				7B2DA7A52151C3DA00D7C8EE /* Assets.xcassets */,
 				7B2DA7A72151C3DA00D7C8EE /* LaunchScreen.storyboard */,
 				7B2DA7AA2151C3DA00D7C8EE /* Info.plist */,
@@ -257,7 +269,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B2DA7A12151C3D900D7C8EE /* ViewController.swift in Sources */,
+				7B02C23C2189261000CE28F1 /* Point.swift in Sources */,
+				7B1F9EDC216A4456009FE8D7 /* PolarViewController.swift in Sources */,
+				7B02C23A2184B1E000CE28F1 /* FocusDirectrixViewController.swift in Sources */,
 				7B2DA79F2151C3D900D7C8EE /* AppDelegate.swift in Sources */,
+				7B02C23E21892E1000CE28F1 /* DistanceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
