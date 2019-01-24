@@ -47,6 +47,9 @@ class DistanceViewController: UIViewController {
         let point1 = Point(x: x1, y: y1)
         let point2 = Point(x: x2, y: y2)
         print(point1.stringVersion())
+        print(point1.calcDistance(from: point2))
+        resultLabel.text = String(point1.calcDistance(from: point2))
+        
         
     }
     

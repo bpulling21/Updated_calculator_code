@@ -20,4 +20,13 @@ class Point{
     func stringVersion() -> String{
         return("(\(x),\(y))")
     }
+    
+    func calcDistance(from other: Point) -> Float{
+        let deltaX = self.x - other.x
+        let deltaY = self.y - other.y
+        let distance = sqrtf((deltaX * deltaX) + (deltaY * deltaY))
+        
+        return distance
+    }
+    
 }
