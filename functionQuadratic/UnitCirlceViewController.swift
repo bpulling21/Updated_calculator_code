@@ -14,11 +14,13 @@ class UnitCircleViewController: UIViewController, UIPickerViewDelegate, UIPicker
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return 16
+        return angles.count
     }
     
     @IBOutlet weak var anglePickerView: UIPickerView!
     @IBOutlet weak var unitCircleResultLabel: UILabel!
+    @IBOutlet weak var blueHighlightImageView: UIImageView!
+    var previousRow = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +37,11 @@ class UnitCircleViewController: UIViewController, UIPickerViewDelegate, UIPicker
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         print("you selected" + String(row))
         unitCircleResultLabel.text = "(" + angles[row].x + ", " + angles[row].y + ")"
+        print("blue highlight should rotate:"  )
+        print(angles[row].radAsDecimal())
+//        blueHighlightImageView.transform = blueHighlightImageView.transform.rotated(by: -1 * ((angles[row].radAsDecimal()) - (angles[previousRow].radAsDecimal())))
+        blueHighlightImageView.transform = CGAffineTransform(rotationAngle: -1 * angles[row].radAsDecimal())
+//        previousRow = row
     }
     /*
     // MARK: - Navigation

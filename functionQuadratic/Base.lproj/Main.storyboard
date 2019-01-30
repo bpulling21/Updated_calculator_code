@@ -530,14 +530,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yds-if-68N">
-                                <rect key="frame" x="27.5" y="414" width="320" height="216"/>
+                                <rect key="frame" x="27.5" y="354" width="320" height="149"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="3dl-Db-PNK"/>
-                                    <constraint firstAttribute="height" constant="216" id="teL-PW-zuY"/>
                                 </constraints>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F11-VP-pQd">
-                                <rect key="frame" x="87.5" y="671" width="200" height="50"/>
+                                <rect key="frame" x="87.5" y="544" width="200" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="T2Z-Nq-OyH"/>
                                     <constraint firstAttribute="width" constant="200" id="noL-Ee-Z1c"/>
@@ -546,19 +545,38 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankUnitCircle" translatesAutoresizingMaskIntoConstraints="NO" id="ozq-Hb-6Pe">
+                                <rect key="frame" x="67.5" y="104" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="OyM-n5-svq"/>
+                                    <constraint firstAttribute="height" constant="240" id="TJC-x7-o9Y"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blueHighlight" translatesAutoresizingMaskIntoConstraints="NO" id="LuW-pu-eEu">
+                                <rect key="frame" x="67.5" y="104" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="O5P-ZW-Ar9"/>
+                                    <constraint firstAttribute="height" constant="240" id="hxN-1a-WAB"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="LuW-pu-eEu" firstAttribute="top" secondItem="aDk-nc-LuO" secondAttribute="top" constant="40" id="6eJ-pL-6vF"/>
                             <constraint firstItem="F11-VP-pQd" firstAttribute="centerX" secondItem="vsm-x0-Qli" secondAttribute="centerX" id="DCF-CJ-h8I"/>
                             <constraint firstItem="F11-VP-pQd" firstAttribute="top" secondItem="Yds-if-68N" secondAttribute="bottom" constant="41" id="Fek-j4-2xi"/>
                             <constraint firstItem="aDk-nc-LuO" firstAttribute="bottom" secondItem="F11-VP-pQd" secondAttribute="bottom" constant="73" id="PDU-oD-aaQ"/>
-                            <constraint firstItem="Yds-if-68N" firstAttribute="top" secondItem="aDk-nc-LuO" secondAttribute="top" constant="350" id="Qy7-dX-zpa"/>
+                            <constraint firstItem="Yds-if-68N" firstAttribute="top" secondItem="ozq-Hb-6Pe" secondAttribute="bottom" constant="10" id="Qy7-dX-zpa"/>
+                            <constraint firstItem="ozq-Hb-6Pe" firstAttribute="centerX" secondItem="vsm-x0-Qli" secondAttribute="centerX" id="S8U-jU-Nvj"/>
                             <constraint firstItem="Yds-if-68N" firstAttribute="centerX" secondItem="vsm-x0-Qli" secondAttribute="centerX" id="eCJ-XU-2Qe"/>
+                            <constraint firstItem="LuW-pu-eEu" firstAttribute="centerX" secondItem="vsm-x0-Qli" secondAttribute="centerX" id="u1r-h2-riS"/>
+                            <constraint firstItem="ozq-Hb-6Pe" firstAttribute="top" secondItem="aDk-nc-LuO" secondAttribute="top" constant="40" id="yRm-40-kCj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aDk-nc-LuO"/>
                     </view>
                     <connections>
                         <outlet property="anglePickerView" destination="Yds-if-68N" id="pxG-eL-9Te"/>
+                        <outlet property="blueHighlightImageView" destination="LuW-pu-eEu" id="m86-2g-Uw9"/>
                         <outlet property="unitCircleResultLabel" destination="F11-VP-pQd" id="EbT-4r-Lft"/>
                     </connections>
                 </viewController>
@@ -693,6 +711,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="blankUnitCircle" width="408" height="408"/>
+        <image name="blueHighlight" width="408" height="408"/>
         <image name="quadfunc" width="177" height="52"/>
     </resources>
 </document>
